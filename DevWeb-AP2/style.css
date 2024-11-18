@@ -189,14 +189,14 @@ header button {
 
 @media screen and (min-width: 1025px) {
     #container-jogadores {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
 
 @media screen and (min-width: 1301px) {
     #container-jogadores {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr fr;
     }
 }
 

@@ -43,6 +43,7 @@ const montaPagina = () => {
     const option0 = document.createElement('option');
     option0.innerHTML = `Escolha o elenco`;
     option0.disabled = true;
+    option0.selected = true;
     const option1 = document.createElement('option');
     option1.value = `masculino`;
     option1.innerHTML = `Masculino`;
@@ -154,6 +155,63 @@ document.getElementById('all').onclick =function () { pega_json(`${url}all`).the
         document.getElementById('mensagem-carregando').remove();
     }
 );}
+
+
+document.getElementById('select-plantel').onchange =function () {
+    if(document.getElementById('select-plantel').value == 'masculino'){
+        pega_json(`${url}masculino`).then(
+            async (r) => {
+                document.getElementById("container-jogadores").innerHTML = '';
+                localStorage.setItem('elenco', 'masculino');
+                const carregando = document.createElement('h2');
+                carregando.innerHTML = `Carregando...`;
+                carregando.id = `mensagem-carregando`;
+                document.body.appendChild(carregando);
+                await sleep(1000);
+                document.getElementById("container-jogadores").innerHTML = '';
+                r.forEach(
+                    (ele) => document.getElementById("container-jogadores").appendChild(montaCard(ele))
+                )
+                document.getElementById('mensagem-carregando').remove();
+            }
+        );
+    }
+    else if(document.getElementById('select-plantel').value == 'feminino'){
+        pega_json(`${url}feminino`).then(
+            async (r) => {
+                document.getElementById("container-jogadores").innerHTML = '';
+                localStorage.setItem('elenco', 'feminino');
+                const carregando = document.createElement('h2');
+                carregando.innerHTML = `Carregando...`;
+                carregando.id = `mensagem-carregando`;
+                document.body.appendChild(carregando);
+                await sleep(1000);
+                r.forEach(
+                    (ele) => document.getElementById("container-jogadores").appendChild(montaCard(ele))
+                )
+                document.getElementById('mensagem-carregando').remove();
+            }
+        );
+    }
+    else if(document.getElementById('select-plantel').value == 'all'){
+        pega_json(`${url}all`).then(
+            async (r) => {
+                document.getElementById("container-jogadores").innerHTML = '';
+                localStorage.setItem('elenco', 'all');
+                const carregando = document.createElement('h2');
+                carregando.innerHTML = `Carregando...`;
+                carregando.id = `mensagem-carregando`;
+                document.body.appendChild(carregando);
+                await sleep(1000);
+                r.forEach(
+                    (ele) => document.getElementById("container-jogadores").appendChild(montaCard(ele))
+                )
+                document.getElementById('mensagem-carregando').remove();
+            }
+        );
+    }
+}
+
 
 document.getElementById('sair').onclick = function () {
     localStorage.removeItem('Logado');
