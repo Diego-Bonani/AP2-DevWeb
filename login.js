@@ -1,8 +1,10 @@
+const url = "https://diego-bonani.github.io/AP2-DevWeb/"
+
 const login = () => {
     const texto = document.getElementById("entrada-senha").value;
     if (hex_md5(texto) === '10044e5fd1a8702a6fb1f172f10f0371'){
         localStorage.setItem('Logado', 'sim');
-        window.location = 'index.html';
+        window.location = `${url}home.html`;
     }
     else{
         alert("voce errou a senha!!!");
