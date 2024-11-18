@@ -71,3 +71,4 @@ if (localStorage.getItem('Logado')){
 else{
     document.body.innerHTML = `<h1>Você precisa estar logado</h1>`
 }
+//vai se fuder
