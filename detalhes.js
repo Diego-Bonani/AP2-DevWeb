@@ -48,7 +48,7 @@ const montaPagina = (dados) => {
 
     const voltar = document.createElement('a');
     voltar.id = 'botao-voltar-detalhes';
-    voltar.href = 'index.html';
+    voltar.href = 'home.html';
     voltar.innerHTML = `Voltar`;
 
     body.appendChild(detalhes);
