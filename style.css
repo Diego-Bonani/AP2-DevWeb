@@ -48,10 +48,16 @@ h2, h3 {
 
 #container-entrada{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
     width: 70vw;
     min-width: 800px;
+}
+
+@media screen and (min-width: 769px){
+    #container-entrada{
+         flex-direction: row;   
+    }
 }
 
 #container-titulo {
