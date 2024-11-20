@@ -56,7 +56,8 @@ h2, h3 {
 
 @media screen and (min-width: 769px){
     #container-entrada{
-         flex-direction: row;   
+        flex-direction: row;   
+        min-width: 0;
     }
 }
 
