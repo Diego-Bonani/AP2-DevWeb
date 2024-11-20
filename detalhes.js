@@ -48,7 +48,7 @@ const montaPagina = (dados) => {
 
     const voltar = document.createElement('a');
     voltar.id = 'botao-voltar-detalhes';
-    voltar.href = 'home.html';
+    voltar.href = 'index.html';
     voltar.innerHTML = `Voltar`;
 
     body.appendChild(detalhes);
@@ -71,4 +71,3 @@ if (localStorage.getItem('Logado')){
 else{
     document.body.innerHTML = `<h1>Você precisa estar logado</h1>`
 }
-//vai se fuder
