@@ -215,7 +215,7 @@ document.getElementById('select-plantel').onchange =function () {
 
 document.getElementById('sair').onclick = function () {
     localStorage.removeItem('Logado');
-    window.location = 'login.html';
+    window.location = 'index.html';
 }
 
 document.getElementById('input-pesquisa').oninput = function () {
