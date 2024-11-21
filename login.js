@@ -15,10 +15,14 @@ const montaPagina = () => {
 
     const container_titulo = document.createElement('div');
     container_titulo.id = `container-titulo`;
+    const imagem = document.createElement('img');
+    imagem.src = 'avatar.jpg';
+    imagem.id = 'avatar';
     const titulo = document.createElement('h1');
     const paragrafo = document.createElement('p');
     titulo.innerHTML = `Atletas do Botafogo em 2024-1`;
     paragrafo.innerHTML = `Criado com objetivos exclusivamente didáticos para a disciplina Desenvolvimento Web do Ibmec Rio.`;
+    container_titulo.appendChild(titulo);
     container_titulo.appendChild(titulo);
     container_titulo.appendChild(paragrafo);
 
