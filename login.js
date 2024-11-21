@@ -16,7 +16,7 @@ const montaPagina = () => {
     const container_titulo = document.createElement('div');
     container_titulo.id = `container-titulo`;
     const imagem = document.createElement('img');
-    imagem.src = 'avatar.jpg';
+    imagem.src = 'avatar.png';
     imagem.id = 'avatar';
     const titulo = document.createElement('h1');
     const paragrafo = document.createElement('p');
