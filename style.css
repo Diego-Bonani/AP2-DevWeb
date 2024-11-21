@@ -41,10 +41,10 @@ h2, h3 {
 }
 
 #avatar {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     display: block;
-    margin-left: 40%;
+    margin-left: 45%;
 }
 
 #body_login {
