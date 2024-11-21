@@ -1,6 +1,6 @@
 const login = () => {
     const texto = document.getElementById("entrada-senha").value;
-    if (hex_md5(texto) === '10044e5fd1a8702a6fb1f172f10f0371'){
+    if (hex_md5(texto) === '826e8634f423c8eefa9bd3cd88d0dfa5'){
         localStorage.setItem('Logado', 'sim');
         window.location = `home.html`;
     }
@@ -34,7 +34,7 @@ const montaPagina = () => {
     button.innerHTML = `Entrar`;
     button.id = `botao-entrada`;
     fake_form.appendChild(button);
-    texto.innerHTML = `Efetue login com a senha: LIBERTADORES`;
+    texto.innerHTML = `Efetue login com a senha: THEYARD`;
     fake_form.appendChild(texto);
     
     container_entrada.appendChild(container_titulo);
