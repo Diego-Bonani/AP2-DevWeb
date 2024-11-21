@@ -42,8 +42,7 @@ h2, h3 {
 
 #avatar {
     height: 100px;
-    aspect-ratio: auto;
-    
+    width: 100px
 }
 
 #body_login {
