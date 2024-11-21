@@ -22,8 +22,8 @@ const montaPagina = () => {
     const paragrafo = document.createElement('p');
     titulo.innerHTML = `Atletas do Botafogo em 2024-1`;
     paragrafo.innerHTML = `Criado com objetivos exclusivamente didáticos para a disciplina Desenvolvimento Web do Ibmec Rio.`;
-    container_titulo.appendChild(titulo);
     container_titulo.appendChild(imagem);
+    container_titulo.appendChild(titulo);
     container_titulo.appendChild(paragrafo);
 
     const fake_form = document.createElement('div');
