@@ -40,6 +40,10 @@ h2, h3 {
     width: 100%;
 }
 
+#avatar {
+    height: 100px;
+}
+
 #body_login {
     display: flex;
     height: 100vh;
